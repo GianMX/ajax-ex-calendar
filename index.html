@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <!-- Font awesome for arrows -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" charset="utf-8"></script>
+  <!-- Moment.js -->
+  <script src="https://momentjs.com/downloads/moment.js"> </script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Handlebars -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>ajax-ex-calendar</title>
+</head>
+<body>
+  <!-- Container  -->
+  <div class="months-container">
+    <div class="select-months">
+      <a href="#"><i class="before fas fa-arrow-left"></i></a>
+      <!-- Generate month -->
+      <h2 data-this-month="" class="current-month"></h2>
+      <a href="#"><i class="after fas fa-arrow-right"></i></a>
+    </div>
+    <!-- Day list as UL/LI -->
+    <ul class="days-list"></ul>
+  </div>
+  <!-- Handlebars script -->
+  <script id="list-day-template" type="text/x-handlebars-template">
+    <li class= "day-list" full-data = "{{date-complete}}">{{giorno}}</li>
+  </script>
+  <!-- My script link -->
+  <script src="js/myjs.js" charset="utf-8"></script>
+</body>
+</html>

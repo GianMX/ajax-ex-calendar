@@ -1,0 +1,37 @@
+/* RESET */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Special setting for Holiday */
+.holiday {
+  background-color: red;
+  color: white;
+  width: 50%;
+  margin: 0 auto;
+  font-weight:bold;
+  border-radius: 5%;
+}
+/* Generic setting months container */
+.months-container {
+  margin: 0 auto;
+  width: 35%;
+  border: 2px dashed black;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin-top: 10px;
+}
+.select-months {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.days-list li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+.current-month {
+  text-transform: uppercase;
+}
