@@ -14,7 +14,7 @@ function holiDays(mese) {
     'url' : 'https://flynn.boolean.careers/exercises/api/holidays?year=2018&month=0',
     'method' : 'GET',
     'data' : {
-      year : mese.year(),
+      year : 2018,
       month : mese.month()
       },
     'success': function(data, stato) {
@@ -38,16 +38,24 @@ function holiDays(mese) {
 $('.after').click(function () {
   var questoMese = $('h2').attr('data-this-month');
   var meseProssimo = moment(questoMese).add(1, 'months');
+  if (meseProssimo.year() == 2018){
   showMonth(meseProssimo);
-  holiDays(meseProssimo);
+  holiDays(meseProssimo);}
+  else {
+    alert('Spiacente, il mondo non esisterà più')
+  }
 });
 
 // Change month function on click ---> Go to the previously month
 $('.before').click(function () {
   var questoMese = $('h2').attr('data-this-month');
   var mesePrecedente = moment(questoMese).subtract(1, 'months');
+  if (mesePrecedente.year() == 2018){
   showMonth(mesePrecedente);
-  holiDays(mesePrecedente);
+  holiDays(mesePrecedente);}
+  else {
+    alert('Spiacente, il mondo non esisteva ancora...')
+  }
 });
 
 // Function for put months and holidays on HTML
