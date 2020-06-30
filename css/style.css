@@ -31,6 +31,9 @@
 .days-list li {
   list-style: none;
   margin-bottom: 3px;
+  border: 1px solid black;
+  width: 50%;
+  cursor: pointer;
 }
 .current-month {
   text-transform: uppercase;
