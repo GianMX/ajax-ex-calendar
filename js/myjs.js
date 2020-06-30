@@ -38,10 +38,10 @@ function holiDays(mese) {
 $('.after').click(function () {
   var questoMese = $('h2').attr('data-this-month');
   var meseProssimo = moment(questoMese).add(1, 'months');
-  if (meseProssimo.year() == 2018){
-  showMonth(meseProssimo);
-  holiDays(meseProssimo);}
-  else {
+    if (meseProssimo.year() == 2018){
+    showMonth(meseProssimo);
+    holiDays(meseProssimo);
+    }else {
     alert('Spiacente, il mondo non esisterà più')
   }
 });

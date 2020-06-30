@@ -24,9 +24,8 @@
   margin-top: 10px;
 }
 .select-months {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
+  display:inline-block;
 }
 .days-list li {
   list-style: none;
@@ -37,4 +36,19 @@
 }
 .current-month {
   text-transform: uppercase;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.floatlf {
+  float: left;
+  display:inline-block;
+  margin-right: 300px;
+}
+
+.floatrg {
+  float: right;
+  display:inline-block;
 }
